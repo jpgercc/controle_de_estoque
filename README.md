@@ -1,1 +1,2 @@
-# deixas as keys e id em um .env.cod
+# Segurança
+Criar um arquivo que tenha o mac do usario autorizado, guardar o endereço mac em um arquivo de preferencia criptografado fora da pasta dos arquivos do programa, uma pasta que o usuario não vá mexer, provavelmnete uma que precise de permissão no windows. O app deve toda vez que iniciar puxar o id mac atual e comparar com o arquivo escondido, se for o mesmo mac cadastrado, libera, se não bloqueia a execução do app.
