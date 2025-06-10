@@ -1,1 +1,1 @@
-# deixas as keys em um .env.cod
+# deixas as keys e id em um .env.cod
