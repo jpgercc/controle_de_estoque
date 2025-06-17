@@ -36,6 +36,3 @@ ou alternativamente usando o comando abaixo:
 
   ```bash  
       python -m streamlit run app.py
-    
-    
-    
