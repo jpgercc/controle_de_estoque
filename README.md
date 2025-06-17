@@ -1,21 +1,35 @@
-# Segurança
+# 📊 Controle Completo de Estoque
 
-<h2>Mais simples:</h2>
-Criar um arquivo que tenha o mac do usario autorizado, guardar o endereço mac em um arquivo de preferencia criptografado fora da pasta dos arquivos do programa, uma pasta que o usuario não vá mexer, provavelmnete uma que precise de permissão no windows. O app deve toda vez que iniciar puxar o id mac atual e comparar com o arquivo escondido, se for o mesmo mac cadastrado, libera, se não bloqueia a execução do app.
+Aplicação web para gerenciamento e análise de estoque desenvolvida com Streamlit, Pandas e Plotly.
 
-ou 
+## 🚀 Funcionalidades
 
-<h2>Mais seguro:</h2> https://www.youtube.com/results?search_query=server+block+by+mac <br>
-ou fazer essa verificação com keys e id mac com um servidor? só que dai eu so poderia banir macs que estao sem licença só quando eu executasse o servidor na minha maquina, ai faria isso periodicamente, entao poderia piratear o app mas ia funcionar até o servidor verificar (cadastrar key publica):
-Toda vez que o app abre (ou a cada X horas), ele faz uma requisição para o servidor.
+- 📤 Upload de arquivos Excel com validação de estrutura
+- 🔍 Filtros dinâmicos por categoria, fornecedor e produto
+- 📦 Identificação de estoque baixo com limite ajustável
+- ⏰ Alertas de produtos com validade próxima (30 dias)
+- 😴 Detecção de produtos inativos (sem movimentação em 30 dias)
+- 📊 Visualizações gráficas interativas:
+  - Estoque por produto (gráfico de barras)
+  - Distribuição de custo por categoria (gráfico de pizza)
 
-O servidor responde se:
+## 🛠️ Requisitos
 
-A licença está ativa.
+- Python 3.7+
+- Bibliotecas:
+  - streamlit
+  - pandas
+  - plotly
+  - openpyxl (para leitura de Excel)
 
-O MAC está autorizado.
+## ⚙️ Instalação
 
-Se o MAC está banido.
-
-Se a licença for inválida ou o MAC banido → app bloqueia.
-Se licença for valida e MAC desconhecido → app bloqueia
+1. Clone o repositório ou baixe o arquivo `app.py`
+2. Instale as dependências:
+   ```bash
+   pip install streamlit pandas plotly openpyxl
+3. Execute a aplicação:
+    ```bash
+    streamlit run app.py
+    ou 
+    python -m streamlit run app.py
