@@ -29,7 +29,13 @@ Aplicação web para gerenciamento e análise de estoque desenvolvida com Stream
    ```bash
    pip install streamlit pandas plotly openpyxl
 3. Execute a aplicação:
+
     ```bash
-    streamlit run app.py
-    ou 
-    python -m streamlit run app.py
+      streamlit run app.py
+ou alternativamente usando o comando abaixo:
+
+  ```bash  
+      python -m streamlit run app.py
+    
+    
+    
